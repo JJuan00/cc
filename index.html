@@ -4,10 +4,37 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <title>Inicio</title>
+        <script src="js/js.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.zoom').hover(function() {
+                $(this).addClass('transition');
+            }, function() {
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
         <style media="screen">
+        img.zoom {
+            width: 150px;
+            height: 200px;
+            /* max-width: 80px !important;
+            max-height: 100px !important; */
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+        }
+
+        .transition {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
         .izquierda {
             position: relative;
-            width: 40%;
+            width: 50%;
             top: 0;
             left: 10%;
             float: left;
@@ -15,11 +42,14 @@
         }
         .derecha {
             position: relative;
-            width: 60%;
+            width: 50%;
             top: 0;
             right: 10%;
             float: right;
             height: 42%;
+        }
+        .imgderecha:hover {
+            width: 65%;
         }
 
         </style>
@@ -31,7 +61,7 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/>
+                    <img style='clear:none;width: 115px;margin-right: 25px;' src='img/1.JPG'/>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
@@ -44,15 +74,15 @@
             </div> <!-- La cabecera izquierda -->
             <div class="derecha" id="">
                 <div class="">
-                    <a href="emprendimiento/ae.html" target="_blank"><img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/></a> <!--Imagen1-->
-                    <a href="emprendimiento/d.html" target="_blank"><img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/></a> <!--Imagen2-->
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/> <!--Imagen3-->
+                    <a href="emprendimiento/ae.html" target="_blank"><img class="zoom" style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/4.jpeg' /></a> <!--Imagen1-->
+                    <a href="emprendimiento/d.html" target="_blank"><img class="zoom" style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/5.jpeg'/></a> <!--Imagen2-->
+                    <a href="emprendimiento/c.html" target="_blank"><img class="zoom"style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/6.jpeg'/></a> <!--Imagen3-->
                 </div> <!-- Contiene solamente las imagenes -->
                 <!-- Imagenes abajo -->
                 <div class="">
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/> <!--Imagen4-->
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/> <!--Imagen5-->
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='1.JPG'/> <!--Imagen6-->
+                    <a href="emprendimiento/pe.html" target="_blank"><img class="zoom" style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/7.JPEG'/></a>  <!--Imagen4-->
+                    <a href="emprendimiento/i.html" target="_blank"><img  class="zoom" style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/8.JPEG'/></a><!--Imagen5-->
+                    <a href="emprendimiento/he.html" target="_blank"><img  class="zoom" style='clear:none;width: 150px;height: 200px;margin-right: 30px;border-radius: 5px;' src='img/9.JPEG'/></a> <!--Imagen6-->
                 </div> <!-- Contiene solamente las imagenes -->
             </div>
             <!-- Imagenes arriba -->

@@ -3,12 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>Modulo actitud emprendedora</title>
-    </head>
+        <script src="../js/js.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.zoom').hover(function() {
+                $(this).addClass('transition');
+            }, function() {
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
     <style media="screen">
+    img.zoom {
+        width: 120px;
+        height: 150px;
+        /* max-width: 80px !important;
+        max-height: 100px !important; */
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+    }
+
+    .transition {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
         body{
             background-color: #2E2E2E;
             color:white;
-            font-family: "Comic Sans ms", verdana, serif;
+            font-family: "arial";
+            font-size: 14px;
         }
         .espacio {
             padding-top: 20%;
@@ -60,6 +87,7 @@
             width: 0;
         }
     </style>
+    </head>
     <body>
         <div class="">
             <div class="head_body">
@@ -67,7 +95,7 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img style='clear:none;width: 115px;margin-right: 25px;' src='../1.JPG'/>
+                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/4.JPEG'/>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
@@ -107,8 +135,6 @@
                 <li>Conoce tu perfil de actitud emprendedora. (Encuesta y gráfico del perfil).</li>
                 <li>Fortalezas y debilidades personales.</li>
             </ul>
-
-
         </div>
     </body>
 </html>
