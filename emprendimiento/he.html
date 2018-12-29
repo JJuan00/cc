@@ -4,6 +4,24 @@
         <meta charset="utf-8">
         <title>Modulo el proyecto hecho empresa</title>
         <script src="../js/js.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target').hide();
+            $('#ocultar').hide();
+            $("#mostrar").click(function(){
+                $('#target').show(1000);
+                $('.target').show("fast");
+                $("#mostrar").hide();
+                $('#ocultar').show();
+             });
+            $("#ocultar").click(function(){
+                $('#target').hide(1000);
+                $('.target').hide("fast");
+                $("#mostrar").show();
+                $('#ocultar').hide();
+             });
+        });
+        </script>
         <script>
         $(document).ready(function(){
             $('.zoom').hover(function() {
@@ -95,11 +113,11 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/9.JPEG'/>
+                    <a href="../../cc"><img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/15.JPEG'/></a>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
-                    <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Noticias y eventos</a
+                    <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Noticias y eventos</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Red de emprendimiento</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Preguntos frecuentes</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Blog</a>
@@ -107,7 +125,7 @@
 
             </div> <!-- La cabecera izquierda -->
             <div class="derecha" align="center">
-                <img src="3.jpg" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
+                <img src="../img/21.png" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
             </div> <!-- La cabecera derecha -->
             <!-- <div class="body_ae"> -->
             <!-- </div> -->
@@ -131,8 +149,10 @@
 
             <strong><p>CONTENIDO TEMÁTICO:</p></strong>
             <ul>
-                <li>El proyecto de empresa (etapa analítica).
-                <li>En donde presentar el proyecto de empresa (etapa económica).
+                <li>De donde surgen las ideas de empresa.
+                <li>Análisis de las ideas.
+                <li>Selección estratégica de una idea de empresa.
+                <li>Descripción de la idea de empresa.
 
             </ul>
         </div>

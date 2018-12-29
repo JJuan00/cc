@@ -4,6 +4,42 @@
         <meta charset="utf-8">
         <title>Modulo el proceso empresarial</title>
         <script src="../js/js.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target').hide();
+            $('#ocultar').hide();
+            $("#mostrar").click(function(){
+                $('#target').show(1000);
+                $('.target').show("fast");
+                $("#mostrar").hide();
+                $('#ocultar').show();
+             });
+            $("#ocultar").click(function(){
+                $('#target').hide(1000);
+                $('.target').hide("fast");
+                $("#mostrar").show();
+                $('#ocultar').hide();
+             });
+        });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target2').hide();
+            $('#ocultar2').hide();
+            $("#mostrar2").click(function(){
+                $('#target2').show(1000);
+                $('.target2').show("fast");
+                $("#mostrar2").hide();
+                $('#ocultar2').show();
+             });
+            $("#ocultar2").click(function(){
+                $('#target2').hide(1000);
+                $('.target2').hide("fast");
+                $("#mostrar2").show();
+                $('#ocultar2').hide();
+             });
+        });
+        </script>
         <script>
         $(document).ready(function(){
             $('.zoom').hover(function() {
@@ -95,7 +131,7 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/13.JPEG'/>
+                    <a href="../../cc"><img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/13.JPEG'/></a>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
@@ -107,7 +143,7 @@
 
             </div> <!-- La cabecera izquierda -->
             <div class="derecha" align="center">
-                <img src="3.jpg" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
+                <img src="../img/19.jpg" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
             </div> <!-- La cabecera derecha -->
             <!-- <div class="body_ae"> -->
             <!-- </div> -->
@@ -129,9 +165,24 @@
 
             <strong><p>CONTENIDO TEMÁTICO:</p></strong>
             <ul>
-                <li>El proceso empresarial.
-                <li>Modelos de proceso empresarial.
-                <li>Identificación personal de un modelo de proceso empresarial.
+                <li>El proceso empresarial y emprendedor. <a id="mostrar" class="mostrar" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+
+                    <div class="target" id="target">
+                      El proceso empresarial son las etapas o pasos que da un emprendedor para convertir su idea de emprendimiento en un proyecto de empresa, estos pasos son la realización de  varias actividades las cuales son interdependientes entre si.
+                      <br><br><a id="ocultar" class="ocultar" style="cursor: pointer; color: #FFF;"> <img src="../img/16.png" alt=""><a/>
+                    </div>
+                <li>Modelo teórico de proceso empresarial aplicado al proceso emprendedor. <a id="mostrar2" class="mostrar2" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+
+                  <div class="target2" id="target2">
+
+                      Para su comprensión se presenta el modelo teórico propuesto por el Centro de desarrollo del espíritu empresarial CDEE del ICESI (Varela, 2001, 87).
+
+                    <br><br>
+                    <a id="ocultar2" class="ocultar2" style="cursor: pointer;color: #FFF;"> <img src="../img/16.png" alt=""> </a>
+                  </div>
+
+                <li>Las etapas del proceso empresarial y emprendedor.
+                <li>Identificación personal de un modelo de proceso emprendedor.
             </ul>
         </div>
     </body>

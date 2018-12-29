@@ -4,6 +4,42 @@
         <meta charset="utf-8">
         <title>Modulo conoce tu entorno</title>
         <script src="../js/js.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target').hide();
+            $('#ocultar').hide();
+            $("#mostrar").click(function(){
+                $('#target').show(1000);
+                $('.target').show("fast");
+                $("#mostrar").hide();
+                $('#ocultar').show();
+             });
+            $("#ocultar").click(function(){
+                $('#target').hide(1000);
+                $('.target').hide("fast");
+                $("#mostrar").show();
+                $('#ocultar').hide();
+             });
+        });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target2').hide();
+            $('#ocultar2').hide();
+            $("#mostrar2").click(function(){
+                $('#target2').show(1000);
+                $('.target2').show("fast");
+                $("#mostrar2").hide();
+                $('#ocultar2').show();
+             });
+            $("#ocultar2").click(function(){
+                $('#target2').hide(1000);
+                $('.target2').hide("fast");
+                $("#mostrar2").show();
+                $('#ocultar2').hide();
+             });
+        });
+        </script>
         <script>
         $(document).ready(function(){
             $('.zoom').hover(function() {
@@ -95,11 +131,11 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/10.JPEG'/>
+                    <a href="../../cc"><img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/10.JPEG'/></a>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
-                    <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Noticias y eventos</a
+                    <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Noticias y eventos</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Red de emprendimiento</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Preguntos frecuentes</a>
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Blog</a>
@@ -107,7 +143,7 @@
 
             </div> <!-- La cabecera izquierda -->
             <div class="derecha" align="center">
-                <img src="3.jpg" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
+                <img src="../img/18.jpg" alt="" style="width: 600px;height: 281px; border-radius: 5px;">
             </div> <!-- La cabecera derecha -->
             <!-- <div class="body_ae"> -->
             <!-- </div> -->
@@ -130,15 +166,46 @@
 
             <strong><p>CONTENIDO TEMÁTICO:</p></strong>
             <ul>
-                <li>Entorno económico.
-                <li>Entorno social.
-                <li>Entorno cultural.
-                <li>Entorno político.
-                <li>Entorno legal.
-                <li>Entorno tecnológico.
-                <li>Proveedores.
-                <li>Clientes.
-                <li>Competencia.
+                <li>El entorno para el emprendimiento empresarial. <a id="mostrar" class="mostrar" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+                <div class="target" id="target">
+                    <p style="width: 96%;" align="justify">El entorno es el conjunto de factores externos que tienen inicidencia positiva o negativa en una organización o, en este caso proyecto o modelo emprendedor. Los fa
+                    ctores positivos se denominan OPORTUNIDADES y los factores negativos reciben el nombre de amenazas.
+                    <br><br>
+                    Dado el carácter positivo, para nuestro ejercicio se trata de hallar oportunidades que puedan convertir
+                    se en ideas emprendedoras que puedan potencializar emprendimientos viables de llevar a la práctica, ejemplo, algunas actividades económic
+                    as son estimuladas por el Estado, como las turísticas, las educativas, las de desarrollo social, las innovadoras, las que generan empleos, las que
+                     usan TIC, lo cual representa una oportunidad de emprendimiento.
+                     <br><br>
+                    Se abordan 2 clases de entorno: entorno general y entorno específico. Es un espacio para desarrollar competencias de búsqueda, selección y
+                    análisis de información que conduzcan a la habilidad de aprovechar las oportunidades para convertirlas en empresas. La falta de información provoca incert
+                    idumbre y la incertidumbre genera riesgo, si se tiene información se disminuye el riesgo. Del  conocimiento que se posea sobre el entorno que rodea a las nuev
+                    as empresas, será mucho mas fácil la toma de decisiones, ya que hay diferentes escenarios que requieren de una vision global del negocio y de lo que se proyecta pa
+                    ra él, esto  sin dejar de lado, la incertidumbre que hace parte del entorno de toda empresa, y  aquí, el insumo clave es la información.<p>
+                    <br>
+                    <a id="ocultar" class="ocultar" style="cursor: pointer; color: #FFF;"> <img src="../img/16.png" alt=""> <a/>
+                </div>
+
+                <li>Entorno general. <a id="mostrar2" class="mostrar2" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+                    <div class="target2" id="target2">
+                        <p style="width: 96%;" align="justify">Según las cifras del informe de The Global Entrepreneurship Monitor, GEM, en el que participan algunas universidades del país;
+                        Colombia se ubica en el tercer lugar en el desarrollo del emprendimiento Empresarial, lo que significa que 6 millones y medio de C
+                        olombianos se encuentran creando empresa. En el país este análisis se viene realizando desde el año 2006 por la universidad ICESI de Cali,
+                         Universidad Javeriana, Universidad del Norte en Barranquilla y la Universidad de los Andes en Bogotá.
+                         <br><br>
+                        Para algunos países Latinoamericanos entre los cuales se encuentra Colombia, por los niveles altos de desempleo, los egresados d
+                        e Universidades encuentran como mejor alternativa la generación de empleo desarrollando proyectos propios con el fin de que les proporcion
+                        e un ingreso decente y permitan mejorar la calidad de vida de ellos y de la población.
+                        <br><br>
+                        En el indicador de facilidad para hacer negocios en Colombia pasó del puesto 79 en el 2007 al 37 en el 2010. Así, entre
+                        enero y noviembre de 2011 se crearon 227.555 nuevas empresas, lo cual representa un crecimiento del 6.7% si se compara con el mismo periodo en 20
+                        10, esto demuestra que el emprendimiento, uno de los ejes estratégicos bajo los cuales trabaja la Red de Cámaras de Comercio para impactar la competitiv
+                        idad nacional, continúa en expansión.</p>
+                        <br>
+                        <a id="ocultar2" class="ocultar2" style="cursor: pointer; color: #FFF;"> <img src="../img/16.png" alt=""> <a/>
+
+                    </div>
+                <li>Entorno específico
+                <li>Evaluación de factores externos para detectar oportunidades de empresa.
             </ul>
 
 
