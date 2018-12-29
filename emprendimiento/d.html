@@ -4,6 +4,24 @@
         <meta charset="utf-8">
         <title>Modulo desarrollo de la creatividad</title>
         <script src="../js/js.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target').hide();
+            $('#ocultar').hide();
+            $("#mostrar").click(function(){
+                $('#target').show(1000);
+                $('.target').show("fast");
+                $("#mostrar").hide();
+                $('#ocultar').show();
+             });
+            $("#ocultar").click(function(){
+                $('#target').hide(1000);
+                $('.target').hide("fast");
+                $("#mostrar").show();
+                $('#ocultar').hide();
+             });
+        });
+        </script>
         <script>
         $(document).ready(function(){
             $('.zoom').hover(function() {
@@ -32,7 +50,7 @@
             transform: scale(1.1);
         }
             body{
-                background-color: #2E2E2E;
+                background-color: #3b3b3b;
                 color:white;
                 font-family: "arial";
                 font-size: 14px;
@@ -95,7 +113,7 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/5.jpeg'/>
+                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/12.jpeg'/>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
@@ -130,6 +148,35 @@
             <strong>CONTENIDO TEMÁTICO:</strong>
             <ul type="square">
                 <li> Porque somos creativos. </li>
+                <p style="width: 96%;" align="justify">Para esto, se puede observar un video disponible en youtube <a target="_blank" href="http://www.youtube.com/watch?v=PfqNNyNQcVk" style="color: #FFF;">La mente supera la creatividad 1/4</a>, revisado noviembre de 2012, en el que se
+                     ve como se deja de utilizar la creatividad por apegarse a convencionalismos y racionalidades que no permiten confiar en la creatividad
+                     , ya que cada ser humano nace
+                    con una enorme creatividad que por hábito no utiliza. El propósito del video es como estimular al máximo la creativ
+                    idad dado que se vive en un mundo creativo. </p>
+                    <a id="mostrar" class="mostrar" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+                <div class="target" id="target">
+                    <p style="width: 96%;" align="justify">Desde niños, se cohíbe la capacidad de creatividad y gradualmente se va aprendiendo que no es bueno hacer algo diferente,
+                    se va dejando que la creatividad se vaya desaprovechando; aunque esta no se pierde del todo se queda enterrada y se puede
+                    activar en cualquier momento. Dado que, se dice que la necesidad es la madre de la invención, entonces la creatividad, es el
+                    padre porque se debe reconocer el poder de la mente supraconciente, que se caracteriza por ser la fuente de la creatividad pura.
+                     La dificultad más grande para no aplicar la creatividad es la falta de confianza, de creer en las propias ideas. Siempre se cree
+                      que está ligada a otras personas, a su nivel de educación, a su estrato, a su edad, etc, lo cual está lejos de ser cierto.
+
+                    VIDEOS SOBRE EJEMPLOS DE CREATIVIDAD E INNOVACIÓN
+
+
+                    El siguiente video que explica el objetivo y la importancia del desarrollo de la creatividad y la innovación dentro de un mercado
+                     que puede verse difícil para los productos o servicios que se desean ofertar que aunque ya pueden existir en el mercado estos dos
+                      factores hacen que se diferencien; porque se basan en sobre pasar las expectativas de los clientes, enfocando los objetivo de la
+                      organización para que sea diferenciadora en su entorno. Disponible en <a href="http:/www.youtube.com/watch?v=ZFJtbxJrL7A" style="color: #FFF;">http:/www.youtube.com/watch?v=ZFJtbxJrL7A</a> , en éste se resalta
+                        el valor de la creatividad y la innovación dentro de una organización a pesar de los momentos de crisis.
+
+                    El video disponible en <a href="http://www.youtube.com/watch?v=rl2rsKr6alY" style="color: #FFF;">http://www.youtube.com/watch?v=rl2rsKr6alY</a>, permite reconocer la creatividad de los jóvenes, para tomar
+                     diferentes productos cotidianos y hacer que tengan un valor agregado, mediante un uso adicional que permite aprovecharlos al máximo.</p>
+                     <a id="ocultar" class="ocultar" style="cursor: pointer; color: #FFF;"> <strong>Ocultar</strong> <a/>
+                </div>
+                <br>
+                <hr>
                 <li> Ejercicios creativos. </li>
                 <li> Elaboración del proyecto de vida aplicando la creatividad </li>
             </ul>

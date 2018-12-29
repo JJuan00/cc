@@ -13,6 +13,60 @@
             });
         });
         </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target').hide();
+            $('#ocultar').hide();
+            $("#mostrar").click(function(){
+                $('#target').show(1000);
+                $('.target').show("fast");
+                $("#mostrar").hide();
+                $('#ocultar').show();
+             });
+            $("#ocultar").click(function(){
+                $('#target').hide(1000);
+                $('.target').hide("fast");
+                $("#mostrar").show();
+                $('#ocultar').hide();
+             });
+        });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target3').hide();
+            $('#ocultar3').hide();
+            $("#mostrar3").click(function(){
+                $('#target3').show(1000);
+                $('.target3').show("fast");
+                $("#mostrar3").hide();
+                $('#ocultar3').show();
+             });
+            $("#ocultar3").click(function(){
+                $('#target3').hide(1000);
+                $('.target3').hide("fast");
+                $("#mostrar3").show();
+                $('#ocultar3').hide();
+             });
+        });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#target2').hide();
+            $('#ocultar2').hide();
+            $("#mostrar2").click(function(){
+                $('#target2').show(1000);
+                $('.target2').show("fast");
+                $("#mostrar2").hide();
+                $('#ocultar2').show();
+             });
+            $("#ocultar2").click(function(){
+                $('#target2').hide(1000);
+                $('.target2').hide("fast");
+                $("#mostrar2").show();
+                $('#ocultar2').hide();
+             });
+        });
+        </script>
     <style media="screen">
     img.zoom {
         width: 120px;
@@ -32,7 +86,7 @@
         transform: scale(1.1);
     }
         body{
-            background-color: #2E2E2E;
+            background-color: #3b3b3b;
             color:white;
             font-family: "arial";
             font-size: 14px;
@@ -65,7 +119,8 @@
         }
         .note {
             border-radius: 5px;
-            background: none repeat scroll 0 0  #414141; /* color de fondo */
+            /* Original #414141 */
+            background: none repeat scroll 0 0 #414141; /* color de fondo */
             color: #FFF; /* color de texto */
             margin: 2em auto;
             overflow: hidden;
@@ -76,7 +131,7 @@
         .note:before {
             -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
             background: none repeat scroll 0 0 #658E16; /* color esquina */
-            border-color: #2E2E2E #2E2E2E #A4A4A4 #2E2E2E; /* color de borde */
+            border-color: #3b3b3b #3b3b3b #A4A4A4 #3b3b3b; /* color de borde */
             border-style: solid;
             border-width: 0 50px 50px 0;
             content: "";
@@ -95,7 +150,7 @@
             </div>
             <div class="izquierda" id="">
                 <ul style="color: #FFF;">
-                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/4.JPEG'/>
+                    <img class="zoom" style='clear:none;width: 115px;margin-right: 25px;border-radius: 5px;' src='../img/11.JPEG'/>
                     <br><br>
 
                     <li><a href="#" style="color: #FFFFFF;text-decoration: none;">Galeria de fotos</a>
@@ -119,7 +174,7 @@
     </div>
         <br><br><br>
         <div class="note">
-            <p style="color: #e8d519 ;">INFORMACI&Oacute;N GENERAL DE CADA CURSO:</p>
+            <p style="color: #FFF;"><strong>INFORMACI&Oacute;N GENERAL DE CADA CURSO:</strong></p>
             <strong><p>OBJETIVOS:</p></strong>
             <ul>
                 <li>Identificar un perfil de actitud emprendedora.
@@ -130,11 +185,138 @@
             <strong><p>CONTENIDO TEMÁTICO:</p></strong>
             <ul>
                 <li>Emprendimiento y empresarismo.
-                <li>Emprendimiento y empresarismo.
+                <p align="justify" style="width: 96%;">Existen varios conceptos que pueden definir cada una de estas palabras que aunque no significan lo mismo, tienen mucho en común; dado que motivan para que el compromiso y perseverancia sean una labor diaria para logran un objetivo.
+
+                Emprendimiento es la actitud (conducta, comportamiento) positiva de las personas para intervenir su contexto de forma creativa,
+                aprovechando las oportunidades del entorno y convirtiéndolas en  un concreto,  visible y con valor agregado. Se refiere a la capacidad
+                 de una persona para hacer un esfuerzo adicional por alcanzar una meta al iniciar una nueva empresa o proyecto, término que después fue
+                 aplicado a empresarios que fueron innovadores o agregaban valor a un producto o proceso ya existente
+
+                Empresarismo es la etapa posterior del proceso emprendedor, se convierte en la estrategia que coadyuva en la construcción del
+                tejido empresarial local, regional y nacional mediante la consolidación en la práctica de los planes de negocio, que conlleva a
+                 la creación de nuevas empresas, y su incidencia con acciones de capacitación y asesoría para su fortalecimiento, sostenibilidad y
+                 crecimiento, que a su vez se implementan en la atención a empresas constituidas de capital privado o de economía solidaria,
+                 en la búsqueda de mayores niveles de productividad y competitividad. <a id="mostrar" class="mostrar" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+                </p>
+                <div class="target" id="target">
+                    <p align="justify" style="width: 96%;">
+                        <strong>VIDEO CORTO DE EMPRENDIMIENTO:</strong> En el siguiente video <a href="http://www.youtube.com/watch?v=wxAq4bqJcoY&list=UU3M9hlzNyl6Xg1bFcqbNAcA&index=1&feature=plcp" target="_blank" style="color: #1C1C1C;"></a> se puede observar cada una de
+                        las etapas del proceso empresarial:
+                        <br>
+                    <ol>
+                        <li>Actitud emprendedora
+                        <li>Desarrollo de la creatividad
+                        <li>Conoce tu entorno
+                        <li>El proceso empresarial
+                        <li>La idea de empresa
+                        <li>El proyecto hecho empresa.
+                    </ol>
+                    <br>
+
+
+
+            <br>
+
+                    <p align="justify" style="width: 96%;"><strong> VIDEOS DE EMPRENDEDORES Y EMPRESARIOS:</strong> Se presentan 2 videos acerca de la historia empresarial de algunos emprendedores que pueden servir
+                    para el análisis de su actitud emprendedora.
+
+                    En el primero, se puede conocer la historia de Henry Ford, quien aunque no fue el inventor del automóvil hizo lo
+                    posible para que se volviera un producto de venta masiva  y llegara al alcance de todos.
+
+                    En el proceso de crecimiento de su empresa se observa que se le presentaron diferentes dificultades sociales,
+                    laborales y de producción; pero siempre busco la forma de solucionarlos de una manera estratégica y efectiva buscando
+                    lo mejor para sus clientes externos e internos, su entorno y su producto. <br>
+                    <a href="https://www.youtube.com/watch?v=lR4qZ79mlzs" target="_blank" style="color: #FFF;"> Historias de Emprendedores - Henry Ford.</a>
+                    </p>
+                    <br>
+
+            En el segundo, se puede conocer el crecimiento de un empresario colombiano como Arturo Calle, que desde su inicio se proyecto a llegarle al entono sin limitar su producto en el mercado.
+
+            Destacando la importancia de perseverar y pensar en grande al momento de crear empresa teniendo una gran capacidad para llegar a sus clientes de forma que se
+            sientan identificados con el producto que se ofrece y supliendo sus necesidades -
+            <a href="http://www.youtube.com/watch?v=DjgAmXbHfg8" target="_blank" style="color: #FFF;">Entrevista con el señor Arturo Calle.</a>
+            <br><br>
+            <a id="ocultar" class="ocultar" style="cursor: pointer;color: #FFF;"> <strong> Ocultar</strong> </a>
+            <br>
+
+            </p>
+                </div>
+                <!-- Primer item -->
+                <hr>
+                <!-- <li>Emprendimiento y empresarismo. -->
                 <li>Las competencias emprendedoras y empresariales.</li>
+
+                    <p style="width: 96%;" align="justify">Se definen las competencias emprendedoras y empresariales necesarias en el proceso de emprendimiento y que se incluyen en el perfil
+                    de actitud emprendedora:</p>
+
+                    <p style="width: 96%" align="justify"><strong>LIDERAZGO:</strong> Conjunto de capacidades que tiene un individuo para influir en otros,  logrando la confianza de su grupo para
+                          guiarlos sobre el logro de un objetivo colectivo.</p>
+
+                        <p style="width: 96%" align="justify"><strong>INICIATIVA:</strong> Proviene del latín <i>"initiātus"</i>, es la capacidad que tiene una persona para generar ideas y métodos innovadores orientándolos al desarrollo de un
+                        proyecto; un emprendedor no es aquel que
+                        solo tiene una idea de negocio es el que busca el mejor camino para poner en marcha su idea y así lograr el éxito de su proyecto. <a id="mostrar2" class="mostrar2" style="cursor: pointer; color: #FFF;"> <strong> Ver mas </strong> <a/></p>
+
+                <div class="target2" id="target2">
+                    <p style="width: 96%" align="justify"><strong>CONOCIMIENTO DEL ENTORNO:</strong> Es la información que tiene un emprendedor sobre el entorno general y específico que lo rodea, lo que le permite detectar oportunidades relacionadas con sus gustos, preferencias, oficio, etc.</p>
+
+                    <p style="width: 96%" align="justify"><strong>AUTOCONFIANZA:</strong> Tener la certeza y seguridad de que las decisiones que tome son las indicadas
+                         para dar solución a cualquier problema que se nos presente y de  esta forma obtener el éxito en las actividades que realicemos.</p>
+
+            <p style="width: 96%" align="justify"><strong>ORIENTACION A LA OPORTUNIDAD:</strong> Habilidad de observar y detectar las oportunidades que el entorno
+                ofrece</p>
+
+                <p style="width: 96%" align="justify"><strong>MANEJO DE T.I.C.:</strong> conocer y utilizar las herramientas de la Tecnología de la información
+                     en su actividad como emprendedor.</p>
+
+        <p style="width: 96%" align="justify"><strong>MANEJO ETICO:</strong> En sus actuaciones diarias emplea principios y valores adecuados para
+            mantener el control de las situaciones que se presenten.</p>
+
+            <p style="width: 96%" align="justify"><strong>MOTIVACION:</strong> Proviene del latín <i>"motivus"</i>, y es lo que genera que un individuo
+                 actué o se comporte de una manera determinada en una situación determinada o en el momento
+                  de tomar una decisión; es un estado interno que dirige  y activa la energía para logro de las metas propuestas.</p>
+    <a id="ocultar2" class="ocultar2" style="cursor: pointer;color: #FFF;"> <strong> Ocultar</strong> </a>
+                </div>
+                <!-- Item dos -->
+                <br>
+                <hr>
                 <li>Conoce tu perfil de actitud emprendedora. (Encuesta y gráfico del perfil).</li>
+                <p align="justify" style="width: 96%;">
+                    Lo que se busca al conocer el perfil la actividad es que los participantes identifiquen las competencias fundamentales para el emprendimiento empresarial como:</p>
+                    <ul style="color: #FFF;">
+                        <li>Liderazgo
+                        <li>Iniciativa
+                        <li>Conocimiento del entorno
+                        <li>Orientación a la oportunidad
+                        <li>Manejo de TIC
+                        <li>Motivación
+                        <li>Autoconfianza
+                        <li>Manejo ético
+                        <li>Convivencia
+                        <li>Trabajo en equipo
+                        <li>Actitud frente al cambio
+                        <li>Capacitación constante, entre otros.
+                    </ul>
+                    <br>
+                     <a id="mostrar3" class="mostrar3" style="cursor: pointer; color: #FFF;"> <strong>Ver mas</strong> <a/>
+                <div class="target3" id="target3">
+
+                    <p style="width: 96%;" align="justify">Teniendo en cuenta estas competencias se puede identificar el potencial que tiene cada individuo como emprendedor y su habilidad
+                        en el manejo de diversas variables, para generar ideas que puedan ser viables y productivas dentro de su entorno.
+
+                    Para esto, se va identificar el perfil emprendedor en un cuestionario de entrada, denominado Test de actitud emprendedora,
+                     ver cuadro No.1, que define cada ítem de forma que se tenga una base de orientación con la que se cuente para especificar
+                     realmente el potencial emprendedor de cada persona participante.</p>
+                     <a id="ocultar3" class="ocultar3" style="cursor: pointer; color: #FFF;"> <strong>Ocultar</strong> <a/>
+
+                </div>
+                <br>
+                <hr>
+                <br>
                 <li>Fortalezas y debilidades personales.</li>
             </ul>
+
+
         </div>
+
     </body>
 </html>
